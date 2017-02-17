@@ -42,7 +42,7 @@ define([
             url: 'https://wygiscservices10-3.wygisc.org/arcgis/rest/services/WRIR/WRIR_Boundary1/MapServer',
             title: 'Reservation Boundary',
             options: {
-                id: 'boundaryLayer',
+                id: 'resboundaryLayer',
                 opacity: 1.0,
                 visible: true
             },
@@ -147,30 +147,30 @@ define([
                 visible: false
             },
             identifyLayerInfos: {
-                layerIds: [0, 1, 2, 3, 4, 5 ,6 ,7]
+                layerIds: [0, 1, 2, 3, 4, 5, 6, 7]
             },
             layerControlLayerInfos: {
                 swipe: true,
                 metadataUrl: true,
                 expanded: false
             }
-          }, {
-              type: 'dynamic',
-              url: 'http://heraclea.wrds.uwyo.edu:6080/arcgis/rest/services/WRDS/WRDS_Landcover/MapServer',
-              title: 'Landcover',
-              options: {
-                  id: 'landcoverlayer',
-                  opacity: 1.0,
-                  visible: false
-              },
-              identifyLayerInfos: {
-                  layerIds: [0]
-              },
-              layerControlLayerInfos: {
-                  swipe: true,
-                  metadataUrl: true,
-                  expanded: false
-              }
+        }, {
+            type: 'dynamic',
+            url: 'http://heraclea.wrds.uwyo.edu:6080/arcgis/rest/services/WRDS/WRDS_Landcover/MapServer',
+            title: 'Landcover',
+            options: {
+                id: 'landcoverlayer',
+                opacity: 1.0,
+                visible: false
+            },
+            identifyLayerInfos: {
+                layerIds: [0]
+            },
+            layerControlLayerInfos: {
+                swipe: true,
+                metadataUrl: true,
+                expanded: false
+            }
         }, {
             type: 'dynamic',
             url: 'https://wygiscservices10-3.wygisc.org/arcgis/rest/services/SuiteWater/Water_Resources/MapServer',
@@ -239,40 +239,40 @@ define([
                 metadataUrl: true,
                 expanded: false
             }
-          }, {
-              type: 'dynamic',
-              url: 'http://heraclea.wrds.uwyo.edu:6080/arcgis/rest/services/WRDS/WRDS_Climate_Tools/MapServer',
-              title: 'Climate Tools',
-              options: {
-                  id: 'climateToolslayer',
-                  opacity: 1.0,
-                  visible: false
-              },
-              identifyLayerInfos: {
-                  layerIds: [0, 1, 2]
-              },
-              layerControlLayerInfos: {
-                  swipe: true,
-                  metadataUrl: true,
-                  expanded: false
-              }
-          }, {
-              type: 'dynamic',
-              url: 'http://heraclea.wrds.uwyo.edu:6080/arcgis/rest/services/WRDS/Prism_Data_All/MapServer',
-              title: 'PRISM Climate data (annual)',
-              options: {
-                  id: 'prismlayer',
-                  opacity: 0.6,
-                  visible: false
-              },
-              identifyLayerInfos: {
-                  layerIds: [0, 1, 2, 3]
-              },
-              layerControlLayerInfos: {
-                  swipe: true,
-                  metadataUrl: true,
-                  expanded: false
-              }
+        }, {
+            type: 'dynamic',
+            url: 'http://heraclea.wrds.uwyo.edu:6080/arcgis/rest/services/WRDS/WRDS_Climate_Tools/MapServer',
+            title: 'Climate Tools',
+            options: {
+                id: 'climateToolslayer',
+                opacity: 1.0,
+                visible: false
+            },
+            identifyLayerInfos: {
+                layerIds: [0, 1, 2]
+            },
+            layerControlLayerInfos: {
+                swipe: true,
+                metadataUrl: true,
+                expanded: false
+            }
+        }, {
+            type: 'dynamic',
+            url: 'http://heraclea.wrds.uwyo.edu:6080/arcgis/rest/services/WRDS/Prism_Data_All/MapServer',
+            title: 'PRISM Climate data (annual)',
+            options: {
+                id: 'prismlayer',
+                opacity: 0.6,
+                visible: false
+            },
+            identifyLayerInfos: {
+                layerIds: [0, 1, 2, 3]
+            },
+            layerControlLayerInfos: {
+                swipe: true,
+                metadataUrl: true,
+                expanded: false
+            }
         }, {
             type: 'dynamic',
             url: 'http://heraclea.wrds.uwyo.edu:6080/arcgis/rest/services/WRDS/PRISM_Precipitation/MapServer',
@@ -341,57 +341,57 @@ define([
                 metadataUrl: true,
                 expanded: false
             }
-          }, {
-              type: 'dynamic',
-              url: 'https://geodata.epa.gov/arcgis/rest/services/ORD/ROE_NLCD/MapServer',
-              title: 'NLCD',
-              options: {
-                  id: 'nlcdLayer',
-                  opacity: 0.5,
-                  visible: false
-              },
-              identifyLayerInfos: {
-                  layerIds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-              },
-              layerControlLayerInfos: {
-                  swipe: true,
-                  metadataUrl: true,
-                  expanded: false
-              }
-            }, {
-                type: 'dynamic',
-                url: 'https://geodata.epa.gov/ArcGIS/rest/services/ORD/USEPA_Ecoregions_Level_III_and_IV/MapServer/',
-                title: 'Ecoregions',
-                options: {
-                    id: 'testlayer',
-                    opacity: 1.0,
-                    visible: false
-                },
-                identifyLayerInfos: {
-                    layerIds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-                },
-                layerControlLayerInfos: {
-                    swipe: true,
-                    metadataUrl: true,
-                    expanded: false
-                }
-              }, {
-                  type: 'image',
-                  url: 'https://landsat2.arcgis.com/arcgis/rest/services/Landsat8_Views/ImageServer/',
-                  title: 'Current NDVI',
-                  options: {
-                      id: 'ndviLayer',
-                      opacity: 1.0,
-                      visible: false
-                  },
-                  identifyLayerInfos: {
-                      layerIds: [0]
-                  },
-                  layerControlLayerInfos: {
-                      swipe: true,
-                      metadataUrl: true,
-                      expanded: false
-                  }
+        }, {
+            type: 'dynamic',
+            url: 'https://geodata.epa.gov/arcgis/rest/services/ORD/ROE_NLCD/MapServer',
+            title: 'NLCD',
+            options: {
+                id: 'nlcdLayer',
+                opacity: 0.5,
+                visible: false
+            },
+            identifyLayerInfos: {
+                layerIds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+            },
+            layerControlLayerInfos: {
+                swipe: true,
+                metadataUrl: true,
+                expanded: false
+            }
+        }, {
+            type: 'dynamic',
+            url: 'https://geodata.epa.gov/ArcGIS/rest/services/ORD/USEPA_Ecoregions_Level_III_and_IV/MapServer/',
+            title: 'Ecoregions',
+            options: {
+                id: 'testlayer',
+                opacity: 1.0,
+                visible: false
+            },
+            identifyLayerInfos: {
+                layerIds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+            },
+            layerControlLayerInfos: {
+                swipe: true,
+                metadataUrl: true,
+                expanded: false
+            }
+        }, {
+            type: 'image',
+            url: 'https://landsat2.arcgis.com/arcgis/rest/services/Landsat8_Views/ImageServer/',
+            title: 'Current NDVI',
+            options: {
+                id: 'ndviLayer',
+                opacity: 1.0,
+                visible: false
+            },
+            identifyLayerInfos: {
+                layerIds: [0]
+            },
+            layerControlLayerInfos: {
+                swipe: true,
+                metadataUrl: true,
+                expanded: false
+            }
         }],
         // set include:true to load. For titlePane type set position the the desired order in the sidebar
         widgets: {
@@ -548,6 +548,7 @@ define([
                     vectorReorder: true,
                     overlayReorder: true
                 }
+
             },
             bookmarks: {
                 include: true,
@@ -677,34 +678,6 @@ define([
                 path: 'gis/dijit/Help',
                 title: 'Help',
                 options: {}
-            },
-            disclaimer: {
-                include: true,
-                id: 'disclaimer',
-                type: 'floating',
-                path: 'widgets/Disclaimer',
-                title: 'Beware!!!',
-                options: {
-
-                    // you can customize the button text
-                    i18n: {
-                        accept: 'Arghhhh!',
-                        decline: 'Run Away!'
-                    },
-
-                    // pre-define the height so the dialog is centered properly
-                    style: 'height:295px;width:375px;',
-
-                    // you can put your content right in the config
-                    content: '<div align="center" style="background-color:black;color:white;font-size:18px;padding:25px;">Abandon all hope, ye who enter here...<br/><img src="http://fc06.deviantart.net/fs5/i/2004/313/2/5/Captain_Jolly_Roger_by_ramiusraven.jpg" style="width:160px;margin-top:25px;" /></div>'
-
-                    // or you can provide the url for another page that includes the content
-                    //href: './disclaimer.html',
-
-                    // the url to go to if the user declines.
-                    //declineHref: 'http://esri.com/'
-
-                }
             }
 
         }

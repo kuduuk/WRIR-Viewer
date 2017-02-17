@@ -8,7 +8,7 @@ body, html {
 }
 
 .appHeader {
-    background: url(../images/linen.jpg) repeat-x scroll left top transparent;
+    background: url(../images/linin.png) repeat-x scroll left top transparent;
     height: 70px;
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ body, html {
 }
 
 .appHeader .headerTitle {
-    color: #FFF;
+    color: #000;
     float: left;
     font-size: 16pt;
     font-weight: 700;
@@ -33,7 +33,7 @@ body, html {
 }
 
 .appHeader .subHeaderTitle {
-    color: #CFCFCF;
+    color: #010120;
     font-size: small;
     padding-left: 20px
 }
@@ -47,7 +47,7 @@ body, html {
 
 .appHeader .headerLinks {
     float: right;
-    color: #FFF;
+    color: #000;
     position: relative;
     top: 27px;
     right: 10px;
@@ -55,7 +55,7 @@ body, html {
 }
 
 .appHeader .headerLinks a {
-    color: #FFF
+    color: #000
 }
 
 #borderContainerOuter {
