@@ -392,6 +392,7 @@ define([
                 metadataUrl: true,
                 expanded: false
             }
+
         }],
         // set include:true to load. For titlePane type set position the the desired order in the sidebar
         widgets: {

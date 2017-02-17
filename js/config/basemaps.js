@@ -7,7 +7,7 @@ define([
         mode: 'custom',
         title: 'Basemaps',
         mapStartBasemap: 'streets',
-        basemapsToShow: ['streets', 'satellite', 'hybrid', 'lightGray', 'googleStreets', 'googleSatellite', 'googleHybrid', 'googleTerrain', 'naip_2006', 'naip_2009', 'naip_2012', 'dem'],
+        basemapsToShow: ['streets', 'satellite', 'hybrid', 'lightGray', 'googleStreets', 'googleSatellite', 'googleHybrid', 'googleTerrain', 'naip_2006', 'naip_2009', 'naip_2012', 'naip_2015', 'dem'],
         basemaps: {
             streets: {
                 title: 'Streets',
@@ -141,6 +141,19 @@ define([
                     id: "naip_2012",
                     layers: [new BasemapLayer({
                         url: "http://wygiscservices.wygisc.org/arcgis/rest/services/Imagery/NAIP_2012/ImageServer"
+                    }), new BasemapLayer({
+                        url: "http://wygiscservices.wygisc.org/arcgis/rest/services/BaseData/BaseData/MapServer",
+                        isReference: true
+                    })]
+                })
+            },
+            naip_2015: {
+                title: "2015 NAIP",
+                contentType: "raster", //lcs - Basemap Content Type
+                basemap: new Basemap({
+                    id: "naip_2015",
+                    layers: [new BasemapLayer({
+                        url: "https://gis.apfo.usda.gov/arcgis/rest/services/NAIP/Wyoming_2015_05m/ImageServer"
                     }), new BasemapLayer({
                         url: "http://wygiscservices.wygisc.org/arcgis/rest/services/BaseData/BaseData/MapServer",
                         isReference: true
