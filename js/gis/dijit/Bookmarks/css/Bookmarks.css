@@ -1,0 +1,8 @@
+.esriBookmarks {
+    width: 100%;
+    border: none
+}
+
+.esriBookmarkItem, .esriBookmarkTable {
+    width: 100%
+}

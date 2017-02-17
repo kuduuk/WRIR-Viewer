@@ -1,0 +1,12 @@
+// styles the arrows on widgets that can float on widget pane
+.floatingWidgetDock:before {
+    float: right;
+    content: "\f112";
+    font-family: FontAwesome
+}
+
+.floatingWidgetPopout:before {
+    float: right;
+    content: "\f064";
+    font-family: FontAwesome
+}

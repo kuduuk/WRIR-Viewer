@@ -1,0 +1,19 @@
+/*csslint ids: false  */
+.floatingWidget .cmvExportWidget {
+    height: 140px;
+    width: 275px;
+}
+
+.cmvExportWidget .exportContainer {
+    padding: 20px;
+}
+
+.cmvExportWidget  .divExportButton {
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+#export_parent_underlay {
+    display: block;
+}

@@ -1,0 +1,54 @@
+.cmvSearchWidget {
+    height: 490px;
+    min-width: 225px;
+    width: 100%;
+}
+
+.cmvSearchWidget .tabContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.cmvSearchWidget .searchTab {
+    padding: 10px;
+}
+
+.cmvSearchWidget label {
+	font-weight: bold;
+	margin-left: 3px;
+}
+.cmvSearchWidget .dijitTextBox {
+	margin-bottom: 10px;
+}
+
+.cmvSearchWidget .searchSelector {
+	margin-top: 10px;
+}
+
+.cmvSearchWidget .searchFields {
+    max-height: 220px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.cmvSearchWidget .bottomButtons {
+    text-align: center;
+}
+
+.cmvSearchWidget .dijitSelect {
+	height: 30px;
+	width: 100%;
+}
+
+.cmvSearchWidget .searchFeaturesIcon {
+	background-repeat: no-repeat;
+	float: left;
+    height: 40px;
+	margin: 10px 11px 12px 11px;
+    text-align: center;
+    width: 40px;
+}
+
+.cmvSearchWidget .searchFeaturesIcon:hover {
+	background-color: #C0C0C0;
+}

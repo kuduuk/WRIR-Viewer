@@ -1,0 +1,37 @@
+/*csslint ids: false, order-alphabetical: false */
+.cmvDisclaimerWidget .disclaimerMessageContainer {
+	padding: 0;
+}
+
+.cmvDisclaimerWidget .disclaimerButtonContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 30px;
+}
+
+.cmvDisclaimerWidget .acceptDisclaimerIcon {
+    color: #009900;
+}
+
+.cmvDisclaimerWidget .acceptDisclaimerButton {
+    float: left;
+}
+
+.cmvDisclaimerWidget .declineDisclaimerIcon {
+    color: #CC0000;
+}
+
+.cmvDisclaimerWidget .declineDisclaimerButton {
+    float: right;
+}
+
+#disclaimer_parent .dijitDialogCloseIcon {
+    display: none;
+}
+
+#disclaimer_parent_underlay {
+    display: block;
+}
+
