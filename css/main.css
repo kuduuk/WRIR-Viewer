@@ -23,7 +23,7 @@ body, html {
 }
 
 .appHeader .headerTitle {
-    color: #000;
+    color: #BD616E;
     float: left;
     font-size: 16pt;
     font-weight: 700;
@@ -33,14 +33,14 @@ body, html {
 }
 
 .appHeader .subHeaderTitle {
-    color: #010120;
+    color: #5085B9;
     font-size: small;
     padding-left: 20px
 }
 
 .appHeader .search {
     float: left;
-    left: 80px;
+    left: 120px;
     position: relative;
     top: 18px
 }
@@ -49,8 +49,8 @@ body, html {
     float: right;
     color: #000;
     position: relative;
-    top: 27px;
-    right: 10px;
+    top: 25px;
+    right: 25px;
     text-align: right
 }
 

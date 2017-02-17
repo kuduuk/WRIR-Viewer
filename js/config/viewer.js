@@ -614,61 +614,11 @@ define([
                     map: true,
                     printTaskURL: 'https://utility.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task',
                     // can also use WyGISC URL https://wygiscservices10-3.wygisc.org/arcgis/rest/services/EORI/EORIExportWebMap/GPServer/Export%20Web%20Map
-                    copyrightText: 'Copyright 2016',
+                    copyrightText: 'Copyright 2017',
                     authorText: 'Office of the Tribal Water Engineer',
                     defaultTitle: 'WRIR Web Map',
                     defaultFormat: 'PDF',
                     defaultLayout: 'Letter ANSI A Landscape'
-                }
-            },
-            directions: {
-                include: false,
-                id: 'directions',
-                type: 'titlePane',
-                canFloat: true,
-                path: 'gis/dijit/Directions',
-                title: 'Directions',
-                open: false,
-                position: 7,
-                options: {
-                    map: true,
-                    mapRightClickMenu: true,
-                    options: {
-                        routeTaskUrl: 'http://sampleserver3.arcgisonline.com/ArcGIS/rest/services/Network/USA/NAServer/Route',
-                        routeParams: {
-                            directionsLanguage: 'en-US',
-                            directionsLengthUnits: units.MILES
-                        },
-                        active: false //for 3.12, starts active by default, which we dont want as it interfears with mapClickMode
-                    }
-                }
-            },
-            editor: {
-                include: false,
-                id: 'editor',
-                type: 'titlePane',
-                canFloat: true,
-                path: 'gis/dijit/Editor',
-                title: 'Editor',
-                open: false,
-                position: 8,
-                options: {
-                    map: true,
-                    mapClickMode: true,
-                    editorLayerInfos: true,
-                    settings: {
-                        toolbarVisible: true,
-                        showAttributesOnClick: true,
-                        enableUndoRedo: true,
-                        createOptions: {
-                            polygonDrawTools: ['freehandpolygon', 'autocomplete']
-                        },
-                        toolbarOptions: {
-                            reshapeVisible: true,
-                            cutVisible: true,
-                            mergeVisible: true
-                        }
-                    }
                 }
             },
             help: {
@@ -679,7 +629,6 @@ define([
                 title: 'Help',
                 options: {}
             }
-
         }
     };
 });
