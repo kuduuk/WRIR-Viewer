@@ -375,6 +375,23 @@ define([
                 metadataUrl: true,
                 expanded: false
             }
+          }, {
+              type: 'dynamic',
+              url: 'https://server.arcgisonline.com/arcgis/rest/services/Specialty/Soil_Survey_Map/MapServer/',
+              title: 'SSURGO',
+              options: {
+                  id: 'surgor',
+                  opacity: 1.0,
+                  visible: false
+              },
+              identifyLayerInfos: {
+                  layerIds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+              },
+              layerControlLayerInfos: {
+                  swipe: true,
+                  metadataUrl: true,
+                  expanded: false
+              }
         }, {
             type: 'image',
             url: 'https://landsat2.arcgis.com/arcgis/rest/services/Landsat8_Views/ImageServer/',
