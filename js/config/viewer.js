@@ -375,23 +375,23 @@ define([
                 metadataUrl: true,
                 expanded: false
             }
-          }, {
-              type: 'dynamic',
-              url: 'https://server.arcgisonline.com/arcgis/rest/services/Specialty/Soil_Survey_Map/MapServer/',
-              title: 'SSURGO',
-              options: {
-                  id: 'surgor',
-                  opacity: 1.0,
-                  visible: false
-              },
-              identifyLayerInfos: {
-                  layerIds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-              },
-              layerControlLayerInfos: {
-                  swipe: true,
-                  metadataUrl: true,
-                  expanded: false
-              }
+        }, {
+            type: 'dynamic',
+            url: 'https://server.arcgisonline.com/arcgis/rest/services/Specialty/Soil_Survey_Map/MapServer/',
+            title: 'SSURGO',
+            options: {
+                id: 'surgor',
+                opacity: 1.0,
+                visible: false
+            },
+            identifyLayerInfos: {
+                layerIds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+            },
+            layerControlLayerInfos: {
+                swipe: true,
+                metadataUrl: true,
+                expanded: false
+            }
         }, {
             type: 'image',
             url: 'https://landsat2.arcgis.com/arcgis/rest/services/Landsat8_Views/ImageServer/',
@@ -619,6 +619,17 @@ define([
                     defaultLengthUnit: units.MILES
                 }
             },
+            share: {
+                include: true,
+                id: 'share',
+                type: 'titlePane',
+                path: 'gis/dijit/Share',
+                title: 'Share This Map',
+                position: 7,
+                options: {
+                    map: true
+                }
+            },
             print: {
                 include: true,
                 id: 'print',
@@ -645,6 +656,41 @@ define([
                 type: 'floating',
                 path: 'gis/dijit/Help',
                 title: 'Help',
+                options: {}
+            },
+            disclaimer: {
+                include: true,
+                id: 'disclaimer',
+                type: 'floating',
+                path: 'gis/dijit/Disclaimer',
+                title: 'Disclaimer',
+                options: {
+                    openOnStart: true,
+                    declineHref: 'http://wrir.wygisc.org',
+                    useCookies: false,
+
+                    // you can customize the button text
+                    i18n: {
+
+                    },
+
+                    // pre-define the height so the dialog is centered properly
+                    style: 'height:295px;width:375px;',
+
+                    // you can put your content right in the config
+                    //content: '<div align="center" style="background-color:black;color:white;font-size:12px;padding:20px;">All Solar Points, Rasters, and Datasets were Calculated off of 2009 LIDAR Data. Any structure/tree built/planted since 2009 will NOT display accurately. The Ortho Photo used in the Basemap was taken in 2012. Any building built after 2012 will not show up in the photo. <br>MAPPING IS SCHEMATIC ONLY AND BEARS NO WARRANTY OF ACCURACY. ALL FEATURES, STRUCTURES, FACILITIES, EASEMENT LOCATIONS, OR ROADWAY LOCATIONS SHOULD BE INDEPENDENTLY FIELD VERIFIED FOR EXISTENCE AND/OR LOCATION.<br/></div>',
+
+                    // or you can provide the url for another page with the content
+                    href: './js/gis/dijit/Disclaimer/templates/disclaimer.html'
+                }
+
+            },
+            fullScreen: {
+                include: true,
+                id: 'fullScreen',
+                type: 'domNode',
+                path: 'gis/dijit/FullScreen',
+                srcNodeRef: 'homeButton',
                 options: {}
             }
         }

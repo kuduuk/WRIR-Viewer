@@ -1,0 +1,123 @@
+/*csslint box-model: false */
+.cmvShareWidget {
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.floatingWidget .cmvShareWidget {
+    margin: 10px;
+    width: 250px;
+}
+
+.cmvShareWidget label {
+    display: block;
+    font-weight: bold;
+}
+
+.cmvShareWidget .icon-clear {
+    clear: both;
+}
+
+.cmvShareWidget .icon-container {
+    margin: 10px;
+}
+
+.cmvShareWidget .use-extent-container,
+.cmvShareWidget .map-url-container,
+.cmvShareWidget .embed-map-container,
+.cmvShareWidget .embed-map-size-container {
+    margin-bottom: 10px;
+}
+
+.cmvShareWidget .map-size-label,
+.cmvShareWidget .extent-checkbox {
+    float: left;
+    margin-right: 5px;
+}
+
+.cmvShareWidget .esriRTL .map-size-label,
+.cmvShareWidget .esrlRTL .extent-checkbox {
+    float: right;
+    margin-left: 5px;
+}
+
+.cmvShareWidget .map-url {
+    width: 100%;
+}
+
+.cmvShareWidget .embed-map-size-dropdown {
+    float: left;
+}
+
+.cmvShareWidget .esriRTL .embed-map-size-dropdown {
+    float: right;
+}
+
+.cmvShareWidget .textarea {
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+.floatingWidget .cmvShareWidget .map-url,
+.floatingWidget .cmvShareWidget .textarea {
+    width: 95%;
+}
+
+.cmvShareWidget .icon {
+    color: #666;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: FontAwesome;
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.cmvShareWidget .icon-gplus {
+    font-size: 25px;
+    margin-top: 2px;
+}
+.cmvShareWidget .icon-link {
+    font-size: 26px;
+    margin-top: 2px;
+}
+
+.cmvShareWidget .icon:hover {
+    color: #000;
+    color: rgba(0, 0, 0, 1);
+}
+
+.cmvShareWidget .icon:visited {
+    color: #666;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.cmvShareWidget .esriRTL .icon {
+    float: right;
+    margin: 0 0 0 10px;
+}
+
+.cmvShareWidget .icon-twitter:before {
+    content: '\f099';
+}
+
+.cmvShareWidget .icon-facebook:before {
+    content: '\f082';
+}
+
+.cmvShareWidget .icon-gplus:before {
+    content: '\f0d5';
+}
+
+.cmvShareWidget .icon-mail:before {
+    content: '\f0e0';
+}
+
+.cmvShareWidget .icon-link:before {
+    content: '\f0c1';
+}
