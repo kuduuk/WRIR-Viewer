@@ -28,8 +28,8 @@ define({
             include: true,
             id: 'fullScreen',
             type: 'domNode',
-            path: 'widgets/FullScreen',
-            srcNodeRef: 'homeButton',
+            path: 'gis/dijit/FullScreen',
+            srcNodeRef: 'fullScreenButton',
             options: {}
         }
     }

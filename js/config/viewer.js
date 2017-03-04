@@ -690,7 +690,7 @@ define([
                 id: 'fullScreen',
                 type: 'domNode',
                 path: 'gis/dijit/FullScreen',
-                srcNodeRef: 'homeButton',
+                srcNodeRef: 'fullScreenButton',
                 options: {}
             }
         }
