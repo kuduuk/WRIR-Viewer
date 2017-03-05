@@ -31,6 +31,16 @@ define([
             sliderStyle: 'small',
             logo: false
         },
+        panes: {
+            left: {},
+            myContent: {
+                id: 'myContent',
+                placeAt: 'left',
+                region: 'bottom',
+                style: 'height: 500px !important;overflow:hidden',
+                content: '<a href="#" onclick=window.open("http://wrir.wygisc.org")><center><img src="images/logo3.png"/></center></a></br><center><b><font size="4">Wind River Reservation</font ></br>Office of the Tribal Water Engineer</b></br>#6 Black Coal Drive P.O. Box 217</br>Fort Washakie, WY 82514</br>(307) 332-6464</br></br></center>'
+            }
+        },
         titles: {
             header: 'Wind River Reservation',
             subHeader: 'Mapping Application',
@@ -655,35 +665,8 @@ define([
                 id: 'help',
                 type: 'floating',
                 path: 'gis/dijit/Help',
-                title: 'Help',
+                title: 'Wind River Reservation Web Map',
                 options: {}
-            },
-            disclaimer: {
-                include: true,
-                id: 'disclaimer',
-                type: 'floating',
-                path: 'gis/dijit/Disclaimer',
-                title: 'Disclaimer',
-                options: {
-                    openOnStart: true,
-                    declineHref: 'http://wrir.wygisc.org',
-                    useCookies: false,
-
-                    // you can customize the button text
-                    i18n: {
-
-                    },
-
-                    // pre-define the height so the dialog is centered properly
-                    style: 'height:295px;width:375px;',
-
-                    // you can put your content right in the config
-                    //content: '<div align="center" style="background-color:black;color:white;font-size:12px;padding:20px;">All Solar Points, Rasters, and Datasets were Calculated off of 2009 LIDAR Data. Any structure/tree built/planted since 2009 will NOT display accurately. The Ortho Photo used in the Basemap was taken in 2012. Any building built after 2012 will not show up in the photo. <br>MAPPING IS SCHEMATIC ONLY AND BEARS NO WARRANTY OF ACCURACY. ALL FEATURES, STRUCTURES, FACILITIES, EASEMENT LOCATIONS, OR ROADWAY LOCATIONS SHOULD BE INDEPENDENTLY FIELD VERIFIED FOR EXISTENCE AND/OR LOCATION.<br/></div>',
-
-                    // or you can provide the url for another page with the content
-                    href: './js/gis/dijit/Disclaimer/templates/disclaimer.html'
-                }
-
             },
             fullScreen: {
                 include: true,

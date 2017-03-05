@@ -2,104 +2,38 @@
     <div data-dojo-type="dijit/layout/ContentPane" data-dojo-attach-point="containerNode" class="helpContainer">
         <div class="helpNode">
             <div data-dojo-type="dijit/layout/TabContainer" class="helpTabContainer">
-                <div data-dojo-type="dijit/layout/ContentPane" title="Navigation">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    Map navigation using mouse and keyboard:
-                                    <ul class="listdbootstrapFix">
-                                        <li>
-                                            Drag to pan
-                                        </li>
-                                        <li>
-                                            SHIFT + Click to recenter
-                                        </li>
-                                        <li>
-                                            SHIFT + Drag to zoom in
-                                        </li>
-                                        <li>
-                                            SHIFT + CTRL + Drag to zoom out
-                                        </li>
-                                        <li>
-                                            Mouse Scroll Forward to zoom in
-                                        </li>
-                                        <li>
-                                            Mouse Scroll Backward to zoom out
-                                        </li>
-                                        <li>
-                                            Use Arrow keys to pan
-                                        </li>
-                                        <li>
-                                            + key to zoom in a level
-                                        </li>
-                                        <li>
-                                            - key to zoom out a level
-                                        </li>
-                                        <li>
-                                            Double Click to Center and Zoom in
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div data-dojo-type="dijit/layout/ContentPane" title="Search">
-                    A variety of searches can be performed in the search box:
-                    <ul class="listdbootstrapFix">
-                        <li>
-                            Search by Address
-                        </li>
-                        <li>
-                            Search by Place Name
-                        </li>
-                        <li>
-                            Search By Zip Code, County, etc.
-                        </li>
-                    </ul>
-                </div>
-                <div data-dojo-type="dijit/layout/ContentPane" title="Tools">
-                    In addition to Search capabilities, the following tools are provided:
-                    <ul class="listdbootstrapFix">
-                        <li>
-                            Measure
-                        </li>
-                        <div>
-                            The measure tool provides the capabilities to draw a point, line, or polygon on the map and specify the unit of measurement.
-                        </div>
-                        <li>
-                            Print
-                        </li>
-                        <div>
-                            This map can be exported to various formats and layouts
-                        </div>
-                        <li>
-                            Find
-                        </li>
-                        <div>
-                            Water Rights can be found by tract number or claim number
-                        </div>
-                        <li>
-                            Identify
-                        </li>
-                        <div>
-                            Only show popup dialogs for certain layers using Identify tool
-                        </div>
-                        <li>
-                            Bookmark
-                        </li>
-                        <div>
-                            Create your own area of interest to save for later
-                        </div>
-                    </ul>
+                <div data-dojo-type="dijit/layout/ContentPane" title="Welcome">
+                    Welcome to the Wind River Indian Reservation Web Map Viewer
                 </div>
                 <div data-dojo-type="dijit/layout/ContentPane" title="Disclaimer">
                     This map is meant to be used for...
 
-                  <div>
-                    <a href='http://www.wrir.wygisc.org'>Go Back to Tribal Water Engineer's Website</a>
-                  </div>
+                    <div>
+                        <a href='http://www.wrir.wygisc.org'>Go Back to Tribal Water Engineer's Website</a>
+                    </div>
+                </div>
+                <div data-dojo-type="dijit/layout/ContentPane" data-dojo-attach-point="help" title="Help">
+                    <div class="helpIntro">
+                        Help is organized by function and by Widget. <br><br>
+                    </div>
+                    <div data-dojo-type="dijit/TitlePane" data-dojo-attach-point="navigateHelp" class="generalDigits" data-dojo-props="open:false, href:'./js/viewer/templates/help/navigate.html', title:'Navigation'">
+                    </div>
+                    <div data-dojo-type="dijit/TitlePane" data-dojo-attach-point="searchHelp" class="generalDigits" data-dojo-props="open:false, href:'./js/viewer/templates/help/search.html', title:'Search'">
+                    </div>
+                    <div data-dojo-type="dijit/TitlePane" data-dojo-attach-point="basemapsHelp" class="generalDigits" data-dojo-props="open:false, href:'./js/viewer/templates/help/basemaps.html', title:'Basemaps'">
+                    </div>
+                    <div data-dojo-type="dijit/TitlePane" data-dojo-attach-point="bookmarksHelp" class="generalDigits" data-dojo-props="open:false, href:'./js/viewer/templates/help/bookmarks.html', title:'Bookmarks'">
+                    </div>
+                    <div data-dojo-type="dijit/TitlePane" data-dojo-attach-point="LayersHelp" class="generalDigits" data-dojo-props="open:false, href:'./js/viewer/templates/help/TOC.html', title:'Layers'">
+                    </div>
+                    <div data-dojo-type="dijit/TitlePane" data-dojo-attach-point="printHelp" class="generalDigits" data-dojo-props="open:false, href:'./js/viewer/templates/help/print.html', title:'Print'">
+                    </div>
+                    <div data-dojo-type="dijit/TitlePane" data-dojo-attach-point="legendHelp" class="generalDigits" data-dojo-props="open:false, href:'./js/viewer/templates/help/legend.html', title:'Legend'">
+                    </div>
+                    <div data-dojo-type="dijit/TitlePane" data-dojo-attach-point="drawHelp" class="generalDigits" data-dojo-props="open:false, href:'./js/viewer/templates/help/draw.html', title:'Draw'">
+                    </div>
+                    <div data-dojo-type="dijit/TitlePane" data-dojo-attach-point="measureHelp" class="generalDigits" data-dojo-props="open:false, href:'./js/viewer/templates/help/measure.html', title:'Measure'">
+                    </div>
                 </div>
             </div>
         </div>

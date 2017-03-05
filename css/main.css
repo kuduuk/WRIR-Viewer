@@ -70,6 +70,7 @@ body, html {
 }
 
 #sidebarLeft {
+    background: url(../images/linin.png);
     width: 334px;
     padding: 4px;
     margin: 0;
