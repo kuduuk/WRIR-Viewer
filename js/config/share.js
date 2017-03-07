@@ -10,8 +10,8 @@ define({
 
     titles: {
         header: 'CMV Sharing Widget',
-        subHeader: 'This is an example of using the Sharing widget',
-        pageTitle: 'CMV Sharing Widget'
+        subHeader: 'This',
+        pageTitle: 'Sharing Widget'
     },
 
 
@@ -21,7 +21,7 @@ define({
             style: 'display:none'
         }
     },
-    collapseButtonsPane: 'center', //center or outer
+    collapseButtonsPane: 'outer', //center or outer
 
     operationalLayers: [],
 

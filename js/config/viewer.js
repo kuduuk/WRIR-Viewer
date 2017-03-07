@@ -82,28 +82,10 @@ define([
         }, {
 
             type: 'dynamic',
-            url: 'https://wygiscservices10-3.wygisc.org/arcgis/rest/services/WildernessSociety/WildernessSocietyAdminBnds/MapServer',
+            url: 'https://wygiscservices-dev.wygisc.org/arcgis/rest/services/EORI/EORI_BaseLayers/MapServer',
             title: 'Administrative',
             options: {
                 id: 'adminLayer',
-                opacity: 1.0,
-                visible: false
-            },
-            identifyLayerInfos: {
-                layerIds: [0, 1, 3, 4, 5, 6, 7, 8]
-            },
-            layerControlLayerInfos: {
-                swipe: true,
-                metadataUrl: true,
-                expanded: false
-            }
-        }, {
-
-            type: 'dynamic',
-            url: 'https://wygiscservices-dev.wygisc.org/arcgis/rest/services/EORI/EORI_BaseLayers/MapServer',
-            title: 'Administrative 2',
-            options: {
-                id: 'admLayer',
                 opacity: 1.0,
                 visible: false
             },
