@@ -32,4 +32,3 @@ define(["dojo/_base/declare", "dojo/_base/lang", "esri/dijit/LocateButton", "esr
         }
     })
 });
-//# sourceMappingURL=LocateButton.map

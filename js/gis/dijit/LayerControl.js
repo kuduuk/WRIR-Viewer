@@ -175,4 +175,3 @@ define(["dojo/_base/declare", "dojo/_base/array", "dojo/_base/lang", "dojo/topic
     });
     return n
 });
-//# sourceMappingURL=LayerControl.map

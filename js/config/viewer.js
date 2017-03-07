@@ -234,23 +234,6 @@ define([
             }
         }, {
             type: 'dynamic',
-            url: 'https://wygiscservices10-3.wygisc.org/arcgis/rest/services/SuiteWater/Ag_Farming/MapServer',
-            title: 'Cropland',
-            options: {
-                id: 'croplandlayer',
-                opacity: 0.5,
-                visible: false
-            },
-            identifyLayerInfos: {
-                layerIds: [0, 1, 2, 3, 4, 5, 6]
-            },
-            layerControlLayerInfos: {
-                swipe: true,
-                metadataUrl: true,
-                expanded: false
-            }
-        }, {
-            type: 'dynamic',
             url: 'http://heraclea.wrds.uwyo.edu:6080/arcgis/rest/services/WRDS/WRDS_Climate_Tools/MapServer',
             title: 'Climate Tools',
             options: {
@@ -419,6 +402,23 @@ define([
                 metadataUrl: true,
                 expanded: false
             }
+          }, {
+              type: 'dynamic',
+              url: 'https://wygiscservices10-3.wygisc.org/arcgis/rest/services/WRIR/RangeUnits/MapServer',
+              title: 'BIA Range Units',
+              options: {
+                  id: 'grazingUnitsLayer',
+                  opacity: 1.0,
+                  visible: false
+              },
+              identifyLayerInfos: {
+                  layerIds: [0]
+              },
+              layerControlLayerInfos: {
+                  swipe: true,
+                  metadataUrl: true,
+                  expanded: false
+              }
 
         }],
         // set include:true to load. For titlePane type set position the the desired order in the sidebar

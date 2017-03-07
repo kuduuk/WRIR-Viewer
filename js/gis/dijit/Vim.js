@@ -24,4 +24,3 @@ define(["dojo/_base/declare", "esri/kernel", "dojo/cookie", "dojo/json", "dojo/_
         }
     })
 });
-//# sourceMappingURL=Vim.map

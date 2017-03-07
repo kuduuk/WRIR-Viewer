@@ -20,4 +20,3 @@ define(["dojo/_base/declare", "dijit/_WidgetBase", "esri/dijit/Bookmarks", "dojo
         }
     });
 });
-//# sourceMappingURL=Bookmarks.map
