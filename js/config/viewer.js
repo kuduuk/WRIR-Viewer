@@ -26,7 +26,7 @@ define([
         mapOptions: {
             navigationMode: 'classic',
             basemap: 'streets',
-            center: [-108.7009687497497, 43.3093629694],
+            center: [-108.784, 43.327],
             zoom: 9,
             sliderStyle: 'small',
             logo: false
@@ -520,10 +520,10 @@ define([
                 options: {
                     map: true,
                     extent: new Extent({
-                        xmin: -12301412.256328698,
-                        ymin: 5260442.955035873,
-                        xmax: -11914946.641319033,
-                        ymax: 5443891.822920207,
+                        xmin: -12302271.238670234,
+                        ymin: 5275977.255447581,
+                        xmax: -11917334.36422627,
+                        ymax: 5447807.695032574,
                         spatialReference: {
                             wkid: 102100
                         }
